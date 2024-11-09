@@ -17,5 +17,9 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  base: '/stik__test/',
+  build: {
+    outDir: 'dist', // Директория для выхода сборки (по умолчанию dist)
+  },
 })
